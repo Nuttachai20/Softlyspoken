@@ -19,8 +19,8 @@ const User = require('../../models/user');
 router.get('/tracks/:trackID', (req, res) => {
   try {
     var trackID = new ObjectID(req.params.trackID);
-  } catch(err) {
-    return res.status(400).json({ message: "Invalid trackID in URL parameter. Must be a single String of 12 bytes or a string of 24 hex characters" }); 
+  } catch (err) {
+    return res.status(400).json({ message: "Invalid trackID in URL parameter. Must be a single String of 12 bytes or a string of 24 hex characters" });
   }
 
   res.set('content-type', 'audio/ogg');
@@ -48,47 +48,47 @@ router.get('/tracks/:trackID', (req, res) => {
 /**
  * POST /tracks
  */
-router.post('/tracks',auth, async (req, res) => {
+router.post('/tracks', auth, async (req, res) => {
   const storage = multer.memoryStorage()
-  const upload = multer({ storage: storage, limits: { fields: 1, fileSize: 90000000, files: 1, parts: 2 }});
+  const upload = multer({ storage: storage, limits: { fields: 1, fileSize: 90000000, files: 1, parts: 2 } });
   upload.single('track')(req, res, (err) => {
     if (err) {
       return res.status(400).json({ message: "Upload Request Validation Failed" });
-    } else if(!req.body.name) {
+    } else if (!req.body.name) {
       return res.status(400).json({ message: "No track name in request body" });
     }
 
     try {
       let trackName = req.body.name;
       /// Readable streams will store data in an internal buffer 
-    // Covert buffer to Readable Stream
-    const readableTrackStream = new Readable();
-    readableTrackStream.push(req.file.buffer);        // Chunk of data to push into the read queue
-    readableTrackStream.push(null);    //  Passing chunk as null signals the end of the stream (EOF), after which no more data can be written
-    
-    // Constructor for a streaming GridFS interface
-    const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db, {
-      bucketName: 'playList'                             // ต้องตั้งให้เหมือนกันไม่งั้นมันจะดึงไม่ถูกตัวของ collection 
-    });
+      // Covert buffer to Readable Stream
+      const readableTrackStream = new Readable();
+      readableTrackStream.push(req.file.buffer);        // Chunk of data to push into the read queue
+      readableTrackStream.push(null);    //  Passing chunk as null signals the end of the stream (EOF), after which no more data can be written
 
-    let uploadStream = bucket.openUploadStream(trackName);  // Returns a writable stream (GridFSBucketWriteStream) for writing buffers to GridFS
-    let id = uploadStream.id; 
-    
-    const track = new Track({
-      ...req.body,
-      userCreate : req.user._id,
-      trackID : uploadStream.id,
-    })
-    track.save();
-    
-    readableTrackStream.pipe(uploadStream); //  stream.pipe() method is called on a readable stream, adding this writable to its set of destinations.
-    uploadStream.on('error', () => {
-      return res.status(500).json({ message: "Error uploading file" });
-    });
+      // Constructor for a streaming GridFS interface
+      const bucket = new mongoose.mongo.GridFSBucket(mongoose.connection.db, {
+        bucketName: 'playList'                             // ต้องตั้งให้เหมือนกันไม่งั้นมันจะดึงไม่ถูกตัวของ collection 
+      });
 
-    uploadStream.on('finish', () => {
-      return res.status(201).send(track)
-    });
+      let uploadStream = bucket.openUploadStream(trackName);  // Returns a writable stream (GridFSBucketWriteStream) for writing buffers to GridFS
+      let id = uploadStream.id;
+
+      const track = new Track({
+        ...req.body,
+        userCreate: req.user._id,
+        trackID: uploadStream.id,
+      })
+      track.save();
+
+      readableTrackStream.pipe(uploadStream); //  stream.pipe() method is called on a readable stream, adding this writable to its set of destinations.
+      uploadStream.on('error', () => {
+        return res.status(500).json({ message: "Error uploading file" });
+      });
+
+      uploadStream.on('finish', () => {
+        return res.status(201).send(track)
+      });
     }
     catch (e) {
       throw new Error(e)

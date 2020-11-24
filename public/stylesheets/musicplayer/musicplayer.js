@@ -1,18 +1,13 @@
-let Track = require("../../../models/track");
-let track = new Track();
-
-function getID (identifier) {
-  
-}
-
 // let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".current-song");
-let track_artist = document.querySelector(".track-artist");
+// let track_artist = document.querySelector(".track-artist");
 
 let playpause_btn = document.querySelector(".play-button");
 let next_btn = document.querySelector(".next-button");
 let prev_btn = document.querySelector(".prev-button");
+
+let box = document.getElementById("box");
 
 let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
@@ -30,14 +25,18 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played 
 let track_list = [
   {
-    name: "SKYBOX",
+    name: String(track_index),
     artist: "Gunna",
     image: "http://localhost:3000/resources/track_art.png",
-    path: ""
+    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+  },
+  {
+    name: String(track_index),
+    artist: "Gunna",
+    image: "http://localhost:3000/resources/track_art.png",
+    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
   }
 ];
-
-track_list[0].path = "http://localhost:3000/tracks/" + card.trackID
 
 function loadTrack(track_index) {
   clearInterval(updateTimer);
@@ -47,7 +46,7 @@ function loadTrack(track_index) {
 
   track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
-  track_artist.textContent = track_list[track_index].artist;
+  // track_artist.textContent = track_list[track_index].artist;
   // now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
 
   updateTimer = setInterval(seekUpdate, 1000);
