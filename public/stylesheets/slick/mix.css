@@ -4,6 +4,49 @@
     flex-wrap: wrap;
 }
 
+.sideimg {
+    background-image: url("http://localhost:3000/resources/drake.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.allsidebar {
+    justify-content: flex-end;
+    position: fixed;
+    right: 0px;
+    width: 300px;
+}
+
+.sidebarfooter {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 50px;
+    width: 300px;
+}
+
+.sidebarheader {
+    height: 50px;
+    font-size: 20px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.sidebarcontent {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 400px;
+    transition: all .3s ease-out;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: pink;
+}
+
 .myButton {
     background-color: #000000;
     border-radius: 60px;

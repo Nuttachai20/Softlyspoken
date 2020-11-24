@@ -201,12 +201,15 @@
 
 .profilename {
     margin-top: 5px;
+    width: 50px;
     font-size: 16px;
     font-family: Ramabhadra;
     font-weight: 400;
     line-height: 38px;
     color: white;
     margin-right: 90px;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
 
 .profilename:hover {
