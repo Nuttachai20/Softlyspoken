@@ -1,0 +1,53 @@
+<div class="signupSection" id="uploadSection">
+    <label id="closeButton" for="show" class="close-btn fas fa-times" title="close"></label>
+    <form action="/tracks" method="POST" enctype="multipart/form-data">
+        <div class="info">
+            <h2>Record Now</h2>
+            <!-- <div id="recordButton" >
+            <img src="http://softlyspoken.herokuapp.com/resources/microphone.png"
+                style="margin-left: 170px;width: 200px;height: 200px;margin-top: 100px;display: block;" />
+        </div>
+        <div id="pauseButton">
+            <img src="http://softlyspoken.herokuapp.com/resources/microphone.png"
+                style="margin-left: 170px;width: 200px;height: 200px;margin-top: 100px;display: none;" />
+        </div> -->
+            <div class="uploadfile" style="margin-top: 100px;">
+                <span> or upload file</span>
+                <input type="file" name="track" style="color: transparent;width: 85px;" class="choosefile"></input>
+            </div>
+        </div>
+        <ul class="noBullet" style="margin-top: 100px;">
+            <li>
+                <label for="tile"></label>
+                <input type="text" class="inputTitle" id="title" name="name" placeholder="title*" value="" required />
+            </li>
+            <!-- <li>
+                <label for="description"></label>
+                <textarea name="description" class="description" id="description" cols="30" rows="10"
+                    placeholder="description*" required></textarea>
+            </li> -->
+
+            <div class="imgToUpload">
+                <div>
+                    <input type="file" name="thumbnail">
+                    Upload thumbnail
+                    <img class="imgupload"
+                        src="http://softlyspoken.herokuapp.com/resources/kisspng-computer-icons-photography-img-landscape-photo-photography-picture-icon-5ab054ddbd13a7.3403789515215055017745.png"
+                        alt="" /> click here to upload
+                </div>
+
+                <label for="choose your tag">Choose your tag:</label>
+                <select name="category" id="choosetag" class="choosetag" style="color: black;">
+                    <option valuey="study">STUDY</option>
+                    <option value="love">LOVE</option>
+                    <option value="entertainment">ENTERTAINMENT</option>
+                    <option value="health">HEALTH</option>
+                </select>
+
+            </div>
+            <li id="center-btn">
+                <button type="submit" id="publish" name="publish" alt="publish">publish</button>
+            </li>
+        </ul>
+    </form>
+</div>

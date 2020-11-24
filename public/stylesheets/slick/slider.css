@@ -1,0 +1,51 @@
+html,
+body {
+    font-family: 'Sriracha', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 90%;
+    height: 230px !important;
+    margin: 50px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}

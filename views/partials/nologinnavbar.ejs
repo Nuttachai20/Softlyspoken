@@ -1,0 +1,49 @@
+<nav>
+    <div class="nav-content">
+        <a href="/" class="logo">
+            <img src="http://softlyspoken.herokuapp.com/resources/logo_w-name.png" style="max-width: 160px; height: 40px; ">
+        </a>
+
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+
+        <div class="nav-links-nologin">
+            <a href="/" style="width: 90px;">Home</a>
+
+            <a href="#" style="width: 90px;">Saved</a>
+
+
+            <form class="navbar-form form-inline">
+                <span class="input-group search-box" style="justify-content: center; margin-top: -3px; margin-left: 0;margin-right: 0;">
+                    <input type="text" id="search" class="form-control" placeholder="Search ">
+                    <span class="input-group-addon"></span>
+                </span>
+            </form>
+
+
+            <a href="/signup" style="width: max-content;">Don't have account?</a>
+            <a href="">
+                <img src="http://softlyspoken.herokuapp.com/resources/register.png" style="width: 75px; height: 25px;  ">
+            </a>
+
+            <a href="/login" style="width: max-content;">Sign in</a>
+        </div>
+        <div class="search-icon">
+            <img src="http://softlyspoken.herokuapp.com/resources/user_login.png" style="margin-top: 0.5em; margin-right: 1em;  width: 30px; height: 30px;  ">
+        </div>
+
+    </div>
+
+
+</nav>
+
+<script>
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function() {
+        nav.classList.toggle('show');
+    }
+</script>

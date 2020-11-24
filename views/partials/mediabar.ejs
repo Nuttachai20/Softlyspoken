@@ -1,0 +1,51 @@
+<div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 music-player" style=" margin-left: 0; background-color:#000000; width: 100%;">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-2 col-3">
+        <div class="player-actions" style=" margin: 3px;">
+            <button class="prev-button" onclick="backward10sec()">
+            <img src="http://softlyspoken.herokuapp.com/resources/backwardx4.png" style="width: 30px;height: 30px;">
+            </button>
+            <button class="play-button" onclick="playpauseTrack()">
+            <img src="http://softlyspoken.herokuapp.com/resources/play.png"style="width: 28px;height: 33px;border-radius: 0%;">
+</button>
+            <button class="next-button" onclick="forward10sec()">
+  <img src="http://softlyspoken.herokuapp.com/resources/forwardx4.png" style="width: 30px;height: 30px;">
+</button>
+            <a href="####" class="track-art"></a>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-6">
+        <div class="progress-wrapper">
+
+            <div class="current-song">Current</div>
+            <input type="range" min="1" max="100" value="1" class="seek_slider" onchange="seekTo()">
+            <div style="display:flex; justify-content: space-between;">
+                <div class="start-time">0:00</div>
+                <div class="end-time">0:00</div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-2 col-3">
+        <div class="player-actions">
+            <div class="volume">
+                <div class="volume-btn" onclick="show()">
+                    <button></button>
+                </div>
+                <div class="volume-controls">
+                    <input type="range" orient="vertical" min="1" max="100" value="100" class="volume_slider" onchange="setVolume()">
+                </div>
+            </div>
+            <a href="#" class="profile">
+                <img src="http://softlyspoken.herokuapp.com/resources/profile.png" class="profileimg">
+                <a href="#" class="profilename track-artist">Untitle Case</a>
+            </a>
+            <a hef="#######" class="profile">
+                <img src="http://softlyspoken.herokuapp.com/resources/white-save.png" class="saved">
+            </a>
+        </div>
+    </div>
+</div>

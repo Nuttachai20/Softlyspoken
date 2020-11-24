@@ -1,0 +1,214 @@
+body,
+html {
+    font-family: Coolvetica;
+    height: 100%;
+    background-color: #92A44E;
+    /* background-color: #80B4C1; */
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.recent-upload {
+    color: #FCD200;
+    margin-top: 36px;
+}
+
+#content {
+    float: left;
+    margin-left: 196px;
+    width: 820px;
+    height: 100%;
+}
+
+.flex-card {
+    display: flex;
+}
+
+.flex-card>div {
+    margin: 10px;
+}
+
+#sidebarwrapper {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 300px;
+    margin-right: 150px;
+}
+
+#sidebar {
+    background-color: #ECECEC;
+    width: 337px;
+    height: 500px;
+    margin-top: 136px;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 20px;
+}
+
+#sidebaritem {
+    background-color: #E5E5E5;
+    margin-top: 20px;
+    width: 337px;
+}
+
+.mousescroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.mousescroll:hover {
+    overflow-y: scroll;
+}
+
+a .avatar img {
+    padding: 0;
+}
+
+.authorDetails .textWrapper {
+    display: inline-block;
+}
+
+.authorDetails .avatar {
+    display: inline-block;
+}
+
+.descripeWrapper {
+    font-size: 8px;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+a.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
+}
+
+
+/*pic login */
+
+
+/*login form*/
+
+.login-form {
+    margin: auto;
+}
+
+.login-form input {
+    padding-left: 40px !important;
+    font-size: 15px;
+}
+
+.login-form input[type=text],
+input[type=password] {
+    height: 50px;
+}
+
+.login-form input:focus {
+    box-shadow: none !important;
+    border-color: #eee;
+}
+
+.login-form svg {
+    margin-top: -78px;
+    margin-left: 10px;
+}
+
+.remember-forgot-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.remember-forgot-div a {
+    float: right;
+    color: black;
+}
+
+.login-btn {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.login-btn button {
+    background-color: #000000 !important;
+    background-color: #000000 !important;
+    padding: 7px 34px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+}
+
+.login-btn button:focus {
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    border-color: #000000;
+}
+
+.btn-btn-primary-sign-in-btn {
+    color: rgb(255, 255, 255);
+    border-color: #000000;
+    background-color: #eee;
+}
+
+
+/* Default styles first then media queries */
+
+@media screen and (min-width: 400px) {
+    .container {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .pic-login-2 {
+        display: none;
+    }
+    .login-form {
+        margin-top: 50px;
+        font-size: medium;
+    }
+    #login {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .pic-login-2 {
+        height: auto;
+    }
+    .login-form {
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .pic-login-2 {
+        height: auto;
+    }
+    .login-form {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .pic-login-2 {
+        height: auto;
+    }
+    .login-form {
+        font-size: xx-large;
+        height: 100px;
+    }
+}

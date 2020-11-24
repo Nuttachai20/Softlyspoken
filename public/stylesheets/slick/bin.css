@@ -1,0 +1,16 @@
+/**************************** media query 1024px **********************/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/**************************** media query 736px **************/
+
+@media only screen and (max-width: 736px) {}
+
+
+/***************************** media query 414px **********/
+
+
+/* mobile breakpoint start */
+
+@media screen and (max-width: 414px) {}

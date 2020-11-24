@@ -1,0 +1,188 @@
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.track-art {
+    background-size: cover;
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.now-playing {
+    font-size: 1rem;
+}
+
+.track-name {
+    font-size: 3rem;
+}
+
+.track-artist {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Modify the appearance of the slider */
+
+
+/* .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  background-color: rgba(107, 107, 107, 1);
+}
+
+/* Modify the appearance of the slider thumb */
+
+
+/* .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+} */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        height: 10px;
+        overflow: hidden;
+        max-width: auto;
+        -webkit-appearance: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+        background-color: rgba(107, 107, 107, 1);
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: #ffffff;
+        margin-top: -1px;
+    }
+    input[type='range']::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        cursor: ew-resize;
+        background: #ffffff;
+        box-shadow: -850px 0 0 850px #ffffff;
+    }
+    .volume_slider[type='range'][orient='vertical'] {
+        margin-top: 10px;
+        height: 130px;
+        overflow: hidden;
+        width: 50px;
+        -webkit-appearance: slider-vertical;
+        opacity: 0.7;
+        transition: opacity .2s;
+        background-color: rgba(107, 107, 107, 1);
+    }
+    .volume_slider[type='range'][orient='vertical']::-webkit-slider-runnable-track {
+        width: 10px;
+        -webkit-appearance: slider-vertical;
+        color: #ffffff;
+        margin-top: -1px;
+    }
+    .volume_slider[type='range'][orient='vertical']::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: slider-vertical;
+        height: 10px;
+        cursor: ew-resize;
+        background: #ffffff;
+        box-shadow: 0 -130px 130px 0 #ffffff;
+    }
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 0%;
+}
+
+.seek_slider .volume_slider {
+    width: 30%;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 398px) {}
+
+@media screen and (min-width: 400px) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 1000px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}
+
+@media screen and (min-width: 1800px) {}

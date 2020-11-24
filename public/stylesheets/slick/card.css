@@ -1,0 +1,78 @@
+.box {
+    position: relative;
+    background-color: #000000;
+    color: white;
+    width: 150px !important;
+    height: 230px;
+    border-radius: 15px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.box-img {
+    position: relative;
+}
+
+.img-box {
+    width: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.time {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 1px;
+}
+
+.time span {
+    font-size: 10px;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 1px
+}
+
+.view span {
+    font-size: 11px;
+}
+
+.timestamp {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.title {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.titled-img {
+    background-image: url("http://mysecondapppp.herokuapp.com/resources/profile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: -1.5em;
+}
+
+p {
+    margin-left: 8px;
+    font-size: 8px;
+}
+
+.headphone {
+    background-image: url("http://mysecondapppp.herokuapp.com/resources/white-headphone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 5px;
+    height: 5px;
+}

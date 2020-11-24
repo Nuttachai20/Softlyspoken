@@ -1,0 +1,54 @@
+<nav>
+    <div class="nav-content">
+        <a href="/" class="logo">
+            <img src="http://softlyspoken.herokuapp.com/resources/logo_w-name.png" style="max-width: 160px; height: 40px; ">
+        </a>
+
+        <div class="nav-icon" id="nav-icon-manu">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+
+        <div class="nav-links-nologin">
+            <a href="/" style="width: 50px;">Home</a>
+
+            <a href="#" style="width: 50px;">Saved</a>
+
+
+            <form class="navbar-form form-inline">
+                <span class="input-group search-box" id="search-box-span"
+                    style="justify-content: center; margin-top: -3px; margin-left: 0;margin-right: 0;">
+                    <input type="text" id="search" class="form-control" placeholder="Search ">
+                    <span class="input-group-addon"></span>
+                </span>
+            </form>
+
+
+            <a href="#" id="uploadButton" style="width: max-content;">upload </a>
+            
+        </div>
+        <div class="nav-item dropdown user-icon" id="dropdownbutton">
+            <a class="nav-link dropdown-toggle user-action nav-item active" style="cursor: pointer;"><img
+                    src="https://anothersideofstory99.files.wordpress.com/2012/09/mahatma.png" class="user-icon"
+                    alt="Avatar" style="margin: 1px 2px 2px 2px;"> Username </a>
+        </div>
+
+
+        <!-- <div class="user-icon user-pic" style="display: flex;">
+            <a style="color:#ffffff; max-width: fit-content;">username</a>
+        </div> -->
+
+
+    </div>
+
+
+</nav>
+
+<script>
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
+</script>

@@ -1,0 +1,93 @@
+.control {
+    margin-top: 0px;
+}
+
+.pod-img {
+    background-image: url("http://mysecondapppp.herokuapp.com/resources/cryman.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.audio-spectrum {
+    width: auto;
+}
+
+
+/* canvas {
+    max-width: auto;
+    background: rgb(17, 17, 17);
+    background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(50, 24, 145, 1) 100%);
+} */
+
+.detail {
+    width: 100%;
+    display: inline-block;
+}
+
+.descripe-detail {
+    color: rgb(18, 18, 27);
+    vertical-align: 50px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.descripe-detail img {
+    margin-left: 6px;
+    vertical-align: -2px;
+}
+
+.reactive-post {
+    display: flex;
+    vertical-align: center;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.reactive-icon {
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.like {
+    display: flex;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    cursor: pointer;
+}
+
+.save {
+    display: flex;
+    cursor: pointer;
+}
+
+.likes {
+    width: 40px;
+    height: 40px;
+}
+
+.comments {
+    margin-top: 3px;
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.saves {
+    margin-top: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 1004px) {
+    .soundWrapper {
+        width: 900px;
+    }
+}
