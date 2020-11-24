@@ -25,13 +25,37 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played 
 let track_list = [
   {
-    name: String(track_index),
+    name: "A",
     artist: "Gunna",
     image: "http://localhost:3000/resources/track_art.png",
     path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
   },
   {
-    name: String(track_index),
+    name: "B",
+    artist: "Gunna",
+    image: "http://localhost:3000/resources/track_art.png",
+    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
+  },
+  {
+    name: "C",
+    artist: "Gunna",
+    image: "http://localhost:3000/resources/track_art.png",
+    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+  },
+  {
+    name: "D",
+    artist: "Gunna",
+    image: "http://localhost:3000/resources/track_art.png",
+    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
+  },
+  {
+    name: "E",
+    artist: "Gunna",
+    image: "http://localhost:3000/resources/track_art.png",
+    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+  },
+  {
+    name: "F",
     artist: "Gunna",
     image: "http://localhost:3000/resources/track_art.png",
     path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
@@ -41,6 +65,7 @@ let track_list = [
 function loadTrack(track_index) {
   clearInterval(updateTimer);
   resetValues();
+  pauseTrack();
   curr_track.src = track_list[track_index].path;
   curr_track.load();
 
@@ -60,7 +85,16 @@ function resetValues() {
 }
 
 // Load the first track in the tracklist
-loadTrack(track_index);
+
+var stated = false;
+
+function change(id) {
+  stated = !stated;
+  if (stated) {
+    track_index = id;
+    loadTrack(track_index);
+  }
+}
 
 function playpauseTrack() {
   if (!isPlaying) playTrack();
