@@ -1,3 +1,21 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>a:after {
+    content: "\f0da";
+    float: right;
+    border: none;
+    font-family: 'FontAwesome';
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 .warpingyou {
     display: flex;
     flex-direction: row;
@@ -16,7 +34,8 @@
 .allsidebar {
     justify-content: flex-end;
     position: fixed;
-    right: 0px;
+    right: 50px;
+    top: 100px;
     width: 300px;
 }
 
@@ -42,9 +61,8 @@
     margin-bottom: 0;
     height: 400px;
     transition: all .3s ease-out;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    background-color: pink;
 }
 
 .myButton {
@@ -158,7 +176,6 @@ p.test {
 
 nav {
     margin: 0;
-    overflow: hidden;
     background: #000000;
     position: fixed;
     top: 0;
@@ -202,7 +219,7 @@ nav {
 }
 
 .nav-links {
-    width: 80%;
+    width: 60%;
     padding-left: auto;
     padding-right: auto;
     display: flex;
@@ -256,8 +273,6 @@ nav {
     display: flex;
     flex-direction: row;
     transition: all 0.3s;
-    display: flex;
-    flex-direction: row;
 }
 
 .search-icon {
@@ -265,6 +280,265 @@ nav {
     transition: all 0.3s;
     display: flex;
     flex-direction: row;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    background: transparent;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #b1b1b1;
+    border-radius: 50px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 170, 170);
+    border-radius: 50px;
+}
+
+.toggle-1 {
+    font-size: 1rem;
+    font-family: Coolvetica;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 15px 0 0;
+}
+
+.toggle-1__input {
+    display: none;
+}
+
+.toggle-1__button {
+    position: relative;
+    display: inline-block;
+    font-family: Coolvetica;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: #000;
+    border-radius: 7px;
+    padding: 5px 10px 5px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-1__button::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("http://localhost:3000/resources/save2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* background: transparent; */
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.toggle-1__button::after {
+    font-family: Coolvetica;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 1rem;
+}
+
+.toggle-1__button--correct {
+    position: absolute;
+    width: 25px;
+    left: 5px;
+    top: 5px;
+    visibility: hidden;
+}
+
+.toggle-1__input:checked+.toggle-1__button {
+    /* background: #2973CB;
+    border: #2973CB; */
+    color: #000;
+}
+
+.toggle-1__input:checked+.toggle-1__button>.toggle-1__button--correct {
+    visibility: visible;
+}
+
+.toggle-1__input:checked+.toggle-1__button::after {
+    font-family: Coolvetica;
+    content: "";
+}
+
+.toggle-2 {
+    font-size: 1rem;
+    font-family: Coolvetica;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 15px 0 0;
+}
+
+.toggle-2__input {
+    display: none;
+}
+
+.toggle-2__button {
+    position: relative;
+    display: inline-block;
+    font-family: Coolvetica;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: #000;
+    border-radius: 7px;
+    padding: 5px 10px 5px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-2__button::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("http://localhost:3000/resources/save2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* background: transparent; */
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.toggle-2__button::after {
+    font-family: Coolvetica;
+    content: "save";
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 1rem;
+}
+
+.toggle-2__button--correct {
+    position: absolute;
+    width: 25px;
+    left: 5px;
+    top: 5px;
+    visibility: hidden;
+}
+
+.toggle-2__input:checked+.toggle-2__button {
+    /* background: #2973CB;
+    border: #2973CB; */
+    color: #000;
+}
+
+.toggle-2__input:checked+.toggle-2__button>.toggle-2__button--correct {
+    visibility: visible;
+}
+
+.toggle-2__input:checked+.toggle-2__button::after {
+    font-family: Coolvetica;
+    content: "saved";
+}
+
+.toggle-3 {
+    font-size: 1rem;
+    font-family: Coolvetica;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 15px 0 0;
+}
+
+.toggle-3__input {
+    display: none;
+}
+
+.toggle-3__button {
+    position: relative;
+    display: inline-block;
+    font-family: Coolvetica;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: #000;
+    border-radius: 7px;
+    padding: 5px 10px 5px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.toggle-3__button::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("http://localhost:3000/resources/logo_black.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* background: transparent; */
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.toggle-3__button::after {
+    font-family: Coolvetica;
+    content: "like it";
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 1rem;
+}
+
+.toggle-3__button--correct {
+    position: absolute;
+    width: 25px;
+    left: 5px;
+    top: 5px;
+    visibility: hidden;
+}
+
+.toggle-3__input:checked+.toggle-3__button {
+    /* background: #2973CB;
+    border: #2973CB; */
+    color: #000;
+}
+
+.toggle-3__input:checked+.toggle-3__button>.toggle-3__button--correct {
+    visibility: visible;
+}
+
+.toggle-3__input:checked+.toggle-3__button::after {
+    font-family: Coolvetica;
+    content: "liked!";
 }
 
 @media (max-width: 900px) {

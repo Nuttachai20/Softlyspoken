@@ -1,54 +1,94 @@
 <nav>
+
     <div class="nav-content">
+
+
         <a href="/" class="logo">
             <img src="http://softlyspoken.herokuapp.com/resources/logo_w-name.png" style="max-width: 160px; height: 40px; ">
         </a>
+
+
 
         <div class="nav-icon" id="nav-icon-manu">
             <div class="bar one"></div>
             <div class="bar two"></div>
         </div>
 
-        <div class="nav-links-nologin">
+        <div class="nav-links">
             <a href="/" style="width: 50px;">Home</a>
 
             <a href="#" style="width: 50px;">Saved</a>
 
-
-            <form class="navbar-form form-inline">
-                <span class="input-group search-box" id="search-box-span"
-                    style="justify-content: center; margin-top: -3px; margin-left: 0;margin-right: 0;">
+            <a class="searchsearch" style=" margin-top: -6px;">
+                <form class="navbar-form form-inline">
+                    <span class="input-group search-box" id="search-box-span" style=" margin-top: -3px; margin-left: 0;margin-right: 0;">
                     <input type="text" id="search" class="form-control" placeholder="Search ">
                     <span class="input-group-addon"></span>
-                </span>
-            </form>
+                    </span>
+                </form>
+            </a>
 
 
-            <a href="#" id="uploadButton" style="width: max-content;">upload </a>
-            
-        </div>
-        <div class="nav-item dropdown user-icon" id="dropdownbutton">
-            <a class="nav-link dropdown-toggle user-action nav-item active" style="cursor: pointer;"><img
-                    src="https://anothersideofstory99.files.wordpress.com/2012/09/mahatma.png" class="user-icon"
-                    alt="Avatar" style="margin: 1px 2px 2px 2px;"> Username </a>
+
+            <a href="#" id="uploadButton" style="width: 100px;">upload </a>
+
         </div>
 
 
-        <!-- <div class="user-icon user-pic" style="display: flex;">
-            <a style="color:#ffffff; max-width: fit-content;">username</a>
-        </div> -->
+
+        <ul class="user-icon">
+            <div class="user-pic" alt="Avatar" style="margin-top: 8px;"></div>
+            <li class="nav-item dropdown" style="width: 80px;">
+                <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle user-action nav-item active" style="margin: 0;">
+               
+                    Username</a>
+                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+                    <a href="/profile" class="dropdown-item" style="cursor: pointer;"><i class="fa fa-user-o"></i>Profile</a></a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/" class="dropdown-item" style="cursor: pointer;">Signout</a></a>
+                </ul>
+            </li>
+        </ul>
+
+
 
 
     </div>
-
-
 </nav>
+
+
+
+
+
+<script>
+    $(function() {
+        // ------------------------------------------------------- //
+        // Multi Level dropdowns
+        // ------------------------------------------------------ //
+        $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            $(this).siblings().toggleClass("show");
+
+
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                $('.dropdown-submenu .show').removeClass("show");
+            });
+
+        });
+    });
+</script>
+
 
 <script>
     const navIcon = document.querySelector(".nav-icon");
     const nav = document.querySelector("nav");
 
-    navIcon.onclick = function () {
+    navIcon.onclick = function() {
         nav.classList.toggle('show');
     }
 </script>

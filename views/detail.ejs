@@ -73,9 +73,17 @@
                         <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 " style="background-color: #ECECEC; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; ">
 
                             <div class="col-xl-3 col-lg-3- col-md-3 col-sm-3 col-3 " style="background-color:transparent; ">
-                                <div class="like ">
+                                <!-- <div class="like ">
                                     <img src="http://softlyspoken.herokuapp.com/resources/like.png " alt=" " class="likes reactive-post "> <span class="reactive-icon ">like it</span>
-                                </div>
+                                </div> -->
+                                <section>
+                                    <label for="toggle-3" class="toggle-3">
+                                <input type="checkbox" name="toggle-3" id="toggle-3" class="toggle-3__input">
+                                <span class="toggle-3__button">
+                                    <img src="http://softlyspoken.herokuapp.com/resources/logo_color.png" alt="correct" class="toggle-3__button--correct">
+                                </span>
+                            </label>
+                                </section>
                             </div>
                             <div class="col-xl-4 col-lg-4- col-md-4 col-sm-4 col-4 " style="background-color: transparent; ">
                                 <div class="comment ">
@@ -83,9 +91,14 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4- col-md-4 col-sm-4 col-4 " style="background-color: transparent; ">
-                                <div class="save ">
-                                    <img src="http://softlyspoken.herokuapp.com/resources/save2.png " alt=" " class="saves reactive-post "> <span class="reactive-icon">save</span>
-                                </div>
+                                <section>
+                                    <label for="toggle-2" class="toggle-2">
+                                <input type="checkbox" name="toggle-2" id="toggle-2" class="toggle-2__input">
+                                <span class="toggle-2__button">
+                                    <img src="http://localhost:3000/resources/save3.png" alt="correct" class="toggle-2__button--correct">
+                                </span>
+                            </label>
+                                </section>
                             </div>
                         </div>
 
@@ -95,8 +108,9 @@
 
                     </div>
 
-
+                    <% include partials/sidebox %>
                 </div>
+
             </div>
 
 

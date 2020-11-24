@@ -222,9 +222,7 @@
 }
 
 .saved {
-    margin-top: 8px;
-    width: 35px;
-    height: 35px;
+    position: relative;
 }
 
 .saved:hover {
