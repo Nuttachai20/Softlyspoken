@@ -37,7 +37,7 @@ app.set('view engine', 'ejs');
 app.use((req, res, next) => {
   
   //change between localhost:3000 && https://mysecondapppp.herokuapp.com
-  const origin = "https://mysecondapppp.herokuapp.com";
+  const origin = "https://softlyspoken.herokuapp.com";
   res.header("Access-Control-Allow-Origin", origin);
   res.header("Access-Control-Allow-Credentials", true);
   if (req.method === "OPTIONS") {
