@@ -80,7 +80,7 @@
 
 @font-face {
     font-family: Ramabhadra;
-    src: url("http://localhost:3000/stylesheets/slick/fonts/Ramabhadra-Regular.ttf");
+    src: url("/stylesheets/slick/fonts/Ramabhadra-Regular.ttf");
     font-weight: unset;
 }
 
@@ -312,7 +312,7 @@
 
 .volume .volume-btn button {
     cursor: pointer;
-    background-image: url("http://localhost:3000/resources/volume.png");
+    background-image: url("/resources/volume.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

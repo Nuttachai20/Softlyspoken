@@ -3,15 +3,12 @@ const multer = require('multer');
 const ObjectID = require('mongodb').ObjectID;
 const { Readable } = require('stream');
 const app = express();
-//const Music = require('../models/music')
-//const Music = require('../models/music')
-//const User = require('../models/user')
+
 const auth = require('../../middleware/auth')
 const router = new express.Router()
 const mongoose = require('mongoose');
 const Track = require('../../models/track');
 const User = require('../../models/user');
-// const list = require('../../middleware/list')
 /**
  * GET /tracks/:trackID
  */

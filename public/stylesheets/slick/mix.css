@@ -23,7 +23,7 @@
 }
 
 .sideimg {
-    background-image: url("http://localhost:3000/resources/drake.png");
+    background-image: url("/resources/drake.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -134,7 +134,7 @@
 }
 
 .artworkarea {
-    background-image: url("http://softlyspoken.herokuapp.com/resources/test2.png");
+    background-image: url("/resources/test2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -259,7 +259,7 @@ nav {
 }
 
 .user-pic {
-    background-image: url("http://localhost:3000/resources/track_art.png");
+    background-image: url("/resources/track_art.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -348,7 +348,7 @@ nav {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url("http://localhost:3000/resources/save2.png");
+    background-image: url("/resources/save2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -424,7 +424,7 @@ nav {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url("http://localhost:3000/resources/save2.png");
+    background-image: url("/resources/save2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -500,7 +500,7 @@ nav {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url("http://localhost:3000/resources/logo_black.png");
+    background-image: url("/resources/logo_black.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

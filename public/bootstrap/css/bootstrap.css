@@ -4667,7 +4667,7 @@ input[type="button"].btn-block {
 
 @font-face {
     font-family: Coolvetica;
-    src: url("http://softlyspoken.herokuapp.com/stylesheets/slick/fonts/coolvetica rg.ttf");
+    src: url("/stylesheets/slick/fonts/coolvetica rg.ttf");
     font-weight: unset;
 }
 
@@ -5154,7 +5154,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("http://softlyspoken.herokuapp.com/resources/logo_w-name.png");
+    background-image: url("/resources/logo_w-name.png");
 }
 
 .navbar-light .navbar-text {
@@ -5205,7 +5205,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("http://softlyspoken.herokuapp.com/resources/logo_w-name.png");
+    background-image: url("/resources/logo_w-name.png");
 }
 
 .navbar-dark .navbar-text {

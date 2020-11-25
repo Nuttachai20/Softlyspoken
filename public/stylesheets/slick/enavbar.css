@@ -34,7 +34,7 @@
 .navbar .navbar-brand .navbar-icon {
     font-size: 36px;
     margin-right: 5px;
-    background-image: url("http://localhost:3000/resources/logo_w-name.png");
+    background-image: url("/resources/logo_w-name.png");
 }
 
 .search-box {
