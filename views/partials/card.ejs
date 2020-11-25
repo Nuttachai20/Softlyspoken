@@ -1,19 +1,16 @@
-<button class="box" style="margin-left: -13px;" onclick="change(<%= id %>)">
+<button class="box" style="margin-left: -13px;" onclick="change(<%= id %>)" ondblclick="window.location='/detail'">
     <div style="color: white;text-decoration: none;">
         <div class="box-img">
-            <img class="img-box" src="https://static.hiphopdx.com/2015/10/drake-hotline-bling-jacket-moncler.png"
-                alt="">
+            <img class="img-box" id="img<%= id %>" onload="load<%= id %>(<%= id %>)"
+                src="https://static.hiphopdx.com/2015/10/drake-hotline-bling-jacket-moncler.png">
             <div class="time"><span class="timestamp"><i class="fa fa-play"></i> 20:35 </span></div>
-            <div class="view"><span>15k <i class="fa fa-headphones"></i></span></div>
         </div>
 
 
-        <p style="font-size: 11px;">EP<%= id %> Mission:<span>ออกล่าสัตว์ประหลาด และตามหาฝูงบินที่หายไป</span>
-        </p>
+        <p style="font-size: 11px;" id="name<%= id %>"></p>
 
         <div style=" display: flex; justify-content: space-between; padding: 5px; ">
-            <span class="timestamp " style="font-size: 9px; "> 1 week ago</span>
-            <span class="title " style="font-size:9px;"> untitled case </span>
+            <span class="title " style="font-size:9px;" id="user"> untitled case </span>
             <div class="titled-img  "></div>
         </div>
     </div>

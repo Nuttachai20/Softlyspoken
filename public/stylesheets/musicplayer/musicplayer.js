@@ -7,8 +7,6 @@ let playpause_btn = document.querySelector(".play-button");
 let next_btn = document.querySelector(".next-button");
 let prev_btn = document.querySelector(".prev-button");
 
-let box = document.getElementById("box");
-
 let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".start-time");
@@ -76,6 +74,98 @@ function loadTrack(track_index) {
 
   updateTimer = setInterval(seekUpdate, 1000);
   // curr_track.addEventListener("ended", nextTrack);
+}
+
+
+//loadcard
+function load0(id) {
+  document.getElementById('name0').innerHTML = track_list[id].name
+  document.getElementById('img0').src = track_list[id].image
+}
+
+function load1(id) {
+  document.getElementById('name1').innerHTML = track_list[id].name;
+  document.getElementById('img1').src = track_list[id].image
+}
+
+function load2(id) {
+  document.getElementById('name2').innerHTML = track_list[id].name
+  document.getElementById('img2').src = track_list[id].image
+}
+
+function load3(id) {
+  document.getElementById('name3').innerHTML = track_list[id].name;
+  document.getElementById('img3').src = track_list[id].image
+}
+
+function load4(id) {
+  document.getElementById('name4').innerHTML = track_list[id].name;
+  document.getElementById('img4').src = track_list[id].image
+}
+
+function load5(id) {
+  document.getElementById('name5').innerHTML = track_list[id].name;
+  document.getElementById('img5').src = track_list[id].image
+}
+
+function load6(id) {
+  document.getElementById('name6').innerHTML = track_list[id].name
+  document.getElementById('img6').src = track_list[id].image
+}
+
+function load7(id) {
+  document.getElementById('name7').innerHTML = track_list[id].name;
+  document.getElementById('img7').src = track_list[id].image
+}
+
+function load8(id) {
+  document.getElementById('name8').innerHTML = track_list[id].name;
+  document.getElementById('img8').src = track_list[id].image
+}
+
+function load9(id) {
+  document.getElementById('name9').innerHTML = track_list[id].name;
+  document.getElementById('img9').src = track_list[id].image
+}
+
+function load10(id) {
+  document.getElementById('name10').innerHTML = track_list[id].name;
+  document.getElementById('img10').src = track_list[id].image
+}
+
+function load11(id) {
+  document.getElementById('name11').innerHTML = track_list[id].name
+  document.getElementById('img11').src = track_list[id].image
+}
+
+function load12(id) {
+  document.getElementById('name12').innerHTML = track_list[id].name;
+  document.getElementById('img12').src = track_list[id].image
+}
+
+function load13(id) {
+  document.getElementById('name13').innerHTML = track_list[id].name
+  document.getElementById('img13').src = track_list[id].image
+}
+
+function load14(id) {
+  document.getElementById('name14').innerHTML = track_list[id].name;
+  document.getElementById('img14').src = track_list[id].image
+}
+
+function load15(id) {
+  document.getElementById('name15').innerHTML = track_list[id].name;
+  document.getElementById('img15').src = track_list[id].image
+}
+
+function load16(id) {
+  document.getElementById('name16').innerHTML = track_list[id].name;
+  document.getElementById('img16').src = track_list[id].image
+}
+
+function load17(id) {
+  document.getElementById('name17').innerHTML = track_list[id].name
+  document.getElementById('img17').src = track_list[id].image
 }
 
 function resetValues() {
