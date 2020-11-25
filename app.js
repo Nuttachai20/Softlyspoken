@@ -34,6 +34,18 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
+app.use((req, res, next) => {
+  
+  //change between localhost:3000 && https://mysecondapppp.herokuapp.com
+  const origin = "https://mysecondapppp.herokuapp.com";
+  res.header("Access-Control-Allow-Origin", origin);
+  res.header("Access-Control-Allow-Credentials", true);
+  if (req.method === "OPTIONS") {
+    res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+    return res.status(200).json({});
+  }
+  next();
+});
 
 app.use(logger('dev'));
 app.use(express.json());
