@@ -1,4 +1,4 @@
-$(document).on("ready", function () {
+$(document).on("ready", function() {
     $(".vertical-center-4").slick({
         dots: true,
         vertical: true,
@@ -34,8 +34,8 @@ $(document).on("ready", function () {
     $(".regular").slick({
         dots: true,
         infinite: true,
-        slidesToShow: window.outerWidth/320,
-        slidesToScroll: window.outerWidth/320,
+        slidesToShow: window.outerWidth / 230,
+        slidesToScroll: window.outerWidth / 230,
     });
     $(".center").slick({
         dots: true,
@@ -44,6 +44,13 @@ $(document).on("ready", function () {
         slidesToShow: 5,
         slidesToScroll: 3,
     });
+    // $(".center").slick({
+    //     dots: true,
+    //     infinite: true,
+    //     centerMode: true,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 3,
+    // });
     $(".variable").slick({
         dots: true,
         infinite: true,

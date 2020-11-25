@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .slider {
-    width: 90%;
+    width: 100%;
     height: 230px !important;
     margin: 50px auto;
 }
