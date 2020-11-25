@@ -25,112 +25,112 @@ let track_list = [
   {
     name: "[วันพีช] - ความลับของคาวามัตสึ",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
-    path: "http://localhost:3000/tracks/5fbe54b5bf68a943c4d30574"
+    image: "/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
+    path: "/tracks/5fbe54b5bf68a943c4d30574"
   },
   {
     name: "5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง)",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
-    path: "http://localhost:3000/tracks/5fbe5567bf68a943c4d30595"
+    image: "/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
+    path: "/tracks/5fbe5567bf68a943c4d30595"
   },
   {
     name: "เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
-    path: "http://localhost:3000/tracks/5fbe55a4bf68a943c4d305b0"
+    image: "/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
+    path: "/tracks/5fbe55a4bf68a943c4d305b0"
   },
   {
     name: "ตลกการเมือง  Podcast EP06",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
-    path: "http://localhost:3000/tracks/5fbe55c9bf68a943c4d305cd"
+    image: "/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
+    path: "/tracks/5fbe55c9bf68a943c4d305cd"
   },
   {
     name: "ได้ขำไปและได้คิดไปในเวลาเดียวกัน  คำนี้ดี EP.220",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
-    path: "http://localhost:3000/tracks/5fbe55e6bf68a943c4d305fc"
+    image: "/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
+    path: "/tracks/5fbe55e6bf68a943c4d305fc"
   },
   {
     name: "นิทานตอนนอนกับลุงไนท์",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
-    path: "http://localhost:3000/tracks/5fbe55fdbf68a943c4d30623"
+    image: "/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
+    path: "/tracks/5fbe55fdbf68a943c4d30623"
   },
   {},{},{},{},{},{},{},{},{},{},{},{},
   {
     name: "[วันพีช] - ความลับของคาวามัตสึ",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
-    path: "http://localhost:3000/tracks/5fbe54b5bf68a943c4d30574"
+    image: "/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
+    path: "/tracks/5fbe54b5bf68a943c4d30574"
   },
   {
     name: "5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง)",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
-    path: "http://localhost:3000/tracks/5fbe5567bf68a943c4d30595"
+    image: "/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
+    path: "/tracks/5fbe5567bf68a943c4d30595"
   },
   {
     name: "เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
-    path: "http://localhost:3000/tracks/5fbe55a4bf68a943c4d305b0"
+    image: "/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
+    path: "/tracks/5fbe55a4bf68a943c4d305b0"
   },
   {
     name: "ตลกการเมือง  Podcast EP06",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
-    path: "http://localhost:3000/tracks/5fbe55c9bf68a943c4d305cd"
+    image: "/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
+    path: "/tracks/5fbe55c9bf68a943c4d305cd"
   },
   {
     name: "ได้ขำไปและได้คิดไปในเวลาเดียวกัน  คำนี้ดี EP.220",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
-    path: "http://localhost:3000/tracks/5fbe55e6bf68a943c4d305fc"
+    image: "/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
+    path: "/tracks/5fbe55e6bf68a943c4d305fc"
   },
   {
     name: "4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
-    path: "http://localhost:3000/tracks/5fbe55fdbf68a943c4d30623"
+    image: "/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
+    path: "/tracks/5fbe55fdbf68a943c4d30623"
   },
   {},{},{},{},{},{},{},{},{},{},{},{},
   {
     name: "4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3.jpg",
-    path: "http://localhost:3000/tracks/5fbe6e99dcc7c50c28bbb556"
+    image: "/resources/trackart/health/4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3.jpg",
+    path: "/tracks/5fbe6e99dcc7c50c28bbb556"
   },
   {
     name: "[Podcast] กาแฟ กินอย่างไรให้สุขภาพดี  BEANHEALTHY",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/[Podcast] กาแฟ กินอย่างไรให้สุขภาพดี  BEANHEALTHY.jpg",
-    path: "http://localhost:3000/tracks/5fbe7848a452cf33480a2f49"
+    image: "/resources/trackart/health/[Podcast] กาแฟ กินอย่างไรให้สุขภาพดี  BEANHEALTHY.jpg",
+    path: "/tracks/5fbe7848a452cf33480a2f49"
   },
   {
     name: "คลี่ชีวิต 24 ชั่วโมง หาที่มาของอาการนอนไม่หลับ พร้อมเทคนิคการเคลียร์ขยะใจ  R U OK EP.121",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/คลี่ชีวิต 24 ชั่วโมง หาที่มาของอาการนอนไม่หลับ พร้อมเทคนิคการเคลียร์ขยะใจ R U OK EP.121.jpg",
-    path: "http://localhost:3000/tracks/5fbe788da452cf33480a2f6a"
+    image: "/resources/trackart/health/คลี่ชีวิต 24 ชั่วโมง หาที่มาของอาการนอนไม่หลับ พร้อมเทคนิคการเคลียร์ขยะใจ R U OK EP.121.jpg",
+    path: "/tracks/5fbe788da452cf33480a2f6a"
   },
   {
     name: "วิธีพิชิตโรคอ้วน by หมอแอมป์",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/วิธีพิชิตโรคอ้วน by หมอแอมป์.jpg",
-    path: "http://localhost:3000/tracks/5fbe78b1a452cf33480a2f9c"
+    image: "/resources/trackart/health/วิธีพิชิตโรคอ้วน by หมอแอมป์.jpg",
+    path: "/tracks/5fbe78b1a452cf33480a2f9c"
   },
   {
     name: "นิสัยเพื่อสุขภาพจิตที่ดี  Mission to the Moon EP. 774",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/นิสัยเพื่อสุขภาพจิตที่ดี  Mission to the Moon EP. 774.jpg",
-    path: "http://localhost:3000/tracks/5fbe78f0a452cf33480a2fb7"
+    image: "/resources/trackart/health/นิสัยเพื่อสุขภาพจิตที่ดี  Mission to the Moon EP. 774.jpg",
+    path: "/tracks/5fbe78f0a452cf33480a2fb7"
   },
   {
     name: "Single Being EP.49 Oversleeping นอนมากแค่ไหน ทำร้ายสุขภาพ",
     artist: "",
-    image: "http://localhost:3000/resources/trackart/health/Single Being EP.49 Oversleeping นอนมากแค่ไหน ทำร้ายสุขภาพ.jpg",
-    path: "http://localhost:3000/tracks/5fbe7927a452cf33480a2fe5"
+    image: "/resources/trackart/health/Single Being EP.49 Oversleeping นอนมากแค่ไหน ทำร้ายสุขภาพ.jpg",
+    path: "/tracks/5fbe7927a452cf33480a2fe5"
   },
 ];
 
@@ -336,13 +336,13 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<img src="http://localhost:3000/resources/pause.png" style = "width: 22px;height: 31px;border-radius: 0%;margin-left: 0px;margin-top: 0px;" > ';
+  playpause_btn.innerHTML = '<img src="/resources/pause.png" style = "width: 22px;height: 31px;border-radius: 0%;margin-left: 0px;margin-top: 0px;" > ';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<img src="http://localhost:3000/resources/play.png" style = "width: 28px;height: 33px;border-radius: 0%;margin-left: 5px;margin-top: 5px;" > ';
+  playpause_btn.innerHTML = '<img src="/resources/play.png" style = "width: 28px;height: 33px;border-radius: 0%;margin-left: 5px;margin-top: 5px;" > ';
 }
 
 function forward10sec() {
