@@ -32,15 +32,6 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-    age: {
-        type: Number,
-        default: 0,
-        validate(value) {
-            if (value < 0) {
-                throw new Error('Age must be a postive number')
-            }
-        }
-    },
     tokens: [{
         token: {
             type: String,
@@ -51,7 +42,7 @@ const userSchema = new mongoose.Schema({
 
 userSchema.methods.generateAuthToken = async function () {
     const user = this
-    const token = jwt.sign({ _id: user._id.toString() }, 'thisismynewcourse')
+    const token = jwt.sign({ _id: user._id.toString() }, 'Private_key')
 
     user.tokens = user.tokens.concat({ token }) // generate token ให้ค่ามันอยู่ใน db
     await user.save()
