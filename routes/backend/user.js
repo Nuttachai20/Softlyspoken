@@ -19,7 +19,7 @@ router.post('/users/login', async (req, res) => {
     try {
         const user = await User.findByCredentials(req.body.name, req.body.password)
         const token = await user.generateAuthToken()
-        res.redirect('/')
+        res.redirect('/member')
     } catch (e) {
         res.redirect(req.get('referer'))
     }
@@ -42,9 +42,9 @@ router.post('/users/logoutAll', auth, async (req, res) => {
     try {
         req.user.tokens = []
         await req.user.save()
-        res.send()
+        res.redirect('/')
     } catch (e) {
-        res.status(500).send()
+        res.redirect('/')
     }
 })
 

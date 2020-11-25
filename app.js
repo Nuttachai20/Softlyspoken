@@ -9,10 +9,15 @@ const multer = require('multer');
  * frond-end
  */
 var index = require('./routes/frontend/index');
+var indexmember = require('./routes/frontend/index login');
 var users = require('./routes/frontend/users');
 var profile = require('./routes/frontend/profile');
 var login = require('./routes/frontend/login');
-var seemore = require('./routes/frontend/seemore');
+var recentlypodcast = require('./routes/frontend/recentlypodcast');
+var studypodcast = require('./routes/frontend/studypodcast');
+var entertainpodcast = require('./routes/frontend/entertainpodcast');
+var heathpodcast = require('./routes/frontend/heathpodcast');
+var lovepodcast = require('./routes/frontend/lovepodcast');
 var signup = require('./routes/frontend/signup');
 var edit = require('./routes/frontend/edit');
 var change = require('./routes/frontend/changepassword');
@@ -56,10 +61,15 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.use('/', index);
+app.use('/member', indexmember);
 app.use('/users', users);
 app.use('/profile', profile);
 app.use('/login', login);
-app.use('/seemore', seemore);
+app.use('/recentlypodcast', recentlypodcast);
+app.use('/studypodcast', studypodcast);
+app.use('/entertainpodcast', entertainpodcast);
+app.use('/heathpodcast', heathpodcast);
+app.use('/lovepodcast', lovepodcast);
 app.use('/signup', signup);
 app.use('/editprofile', edit);
 app.use('/changepassword', change);

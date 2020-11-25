@@ -45,7 +45,7 @@ router.get('/tracks/:trackID', (req, res) => {
 /**
  * POST /tracks
  */
-router.post('/tracks', auth, async (req, res) => {
+router.post('/tracks', async (req, res) => {
   const storage = multer.memoryStorage()
   const upload = multer({ storage: storage, limits: { fields: 1, fileSize: 90000000, files: 1, parts: 2 } });
   upload.single('track')(req, res, (err) => {
@@ -73,7 +73,7 @@ router.post('/tracks', auth, async (req, res) => {
 
       const track = new Track({
         ...req.body,
-        userCreate: req.user._id,
+        // userCreate: req.user._id,
         trackID: uploadStream.id,
       })
       track.save();

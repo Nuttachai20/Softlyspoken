@@ -90,10 +90,17 @@ let track_list = [
     path: "http://localhost:3000/tracks/5fbe55e6bf68a943c4d305fc"
   },
   {
-    name: "นิทานตอนนอนกับลุงไนท์",
+    name: "4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3",
     artist: "",
     image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
     path: "http://localhost:3000/tracks/5fbe55fdbf68a943c4d30623"
+  },
+  {},{},{},{},{},{},{},{},{},{},{},{},
+  {
+    name: "4 วิธี สุขภาพดีด้วย Smartwatch - Podcast EP.3",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
+    path: "http://localhost:3000/tracks/5fbe6e99dcc7c50c28bbb556"
   },
 ];
 
@@ -103,6 +110,7 @@ function loadTrack(track_index) {
   pauseTrack();
   curr_track.src = track_list[track_index].path;
   curr_track.load();
+  playTrack();
 
   track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
@@ -293,6 +301,293 @@ function load34(id) {
 function load35(id) {
   document.getElementById('name35').innerHTML = track_list[id].name
   document.getElementById('img35').src = track_list[id].image
+}
+
+function load36(id) {
+  document.getElementById('name36').innerHTML = track_list[id].name
+  document.getElementById('img36').src = track_list[id].image
+}
+
+function load37(id) {
+  document.getElementById('name37').innerHTML = track_list[id].name;
+  document.getElementById('img37').src = track_list[id].image
+}
+
+function load38(id) {
+  document.getElementById('name38').innerHTML = track_list[id].name
+  document.getElementById('img38').src = track_list[id].image
+}
+
+function load39(id) {
+  document.getElementById('name39').innerHTML = track_list[id].name;
+  document.getElementById('img39').src = track_list[id].image
+}
+
+function load40(id) {
+  document.getElementById('name40').innerHTML = track_list[id].name;
+  document.getElementById('img40').src = track_list[id].image
+}
+
+function load41(id) {
+  document.getElementById('name41').innerHTML = track_list[id].name;
+  document.getElementById('img41').src = track_list[id].image
+}
+
+function load42(id) {
+  document.getElementById('name42').innerHTML = track_list[id].name
+  document.getElementById('img42').src = track_list[id].image
+}
+
+function load43(id) {
+  document.getElementById('name43').innerHTML = track_list[id].name;
+  document.getElementById('img43').src = track_list[id].image
+}
+
+function load44(id) {
+  document.getElementById('name44').innerHTML = track_list[id].name;
+  document.getElementById('img44').src = track_list[id].image
+}
+
+function load45(id) {
+  document.getElementById('name45').innerHTML = track_list[id].name;
+  document.getElementById('img45').src = track_list[id].image
+}
+
+function load46(id) {
+  document.getElementById('name46').innerHTML = track_list[id].name;
+  document.getElementById('img46').src = track_list[id].image
+}
+
+function load47(id) {
+  document.getElementById('name47').innerHTML = track_list[id].name
+  document.getElementById('img47').src = track_list[id].image
+}
+
+function load48(id) {
+  document.getElementById('name48').innerHTML = track_list[id].name;
+  document.getElementById('img48').src = track_list[id].image
+}
+
+function load49(id) {
+  document.getElementById('name49').innerHTML = track_list[id].name
+  document.getElementById('img49').src = track_list[id].image
+}
+
+function load50(id) {
+  document.getElementById('name50').innerHTML = track_list[id].name;
+  document.getElementById('img50').src = track_list[id].image
+}
+
+function load51(id) {
+  document.getElementById('name51').innerHTML = track_list[id].name;
+  document.getElementById('img51').src = track_list[id].image
+}
+
+function load52(id) {
+  document.getElementById('name52').innerHTML = track_list[id].name;
+  document.getElementById('img52').src = track_list[id].image
+}
+
+function load53(id) {
+  document.getElementById('name53').innerHTML = track_list[id].name
+  document.getElementById('img53').src = track_list[id].image
+}
+
+function load54(id) {
+  document.getElementById('name54').innerHTML = track_list[id].name
+  document.getElementById('img54').src = track_list[id].image
+}
+
+function load55(id) {
+  document.getElementById('name55').innerHTML = track_list[id].name;
+  document.getElementById('img55').src = track_list[id].image
+}
+
+function load56(id) {
+  document.getElementById('name56').innerHTML = track_list[id].name
+  document.getElementById('img56').src = track_list[id].image
+}
+
+function load57(id) {
+  document.getElementById('name57').innerHTML = track_list[id].name;
+  document.getElementById('img57').src = track_list[id].image
+}
+
+function load58(id) {
+  document.getElementById('name58').innerHTML = track_list[id].name;
+  document.getElementById('img58').src = track_list[id].image
+}
+
+function load59(id) {
+  document.getElementById('name59').innerHTML = track_list[id].name;
+  document.getElementById('img59').src = track_list[id].image
+}
+
+function load60(id) {
+  document.getElementById('name60').innerHTML = track_list[id].name
+  document.getElementById('img60').src = track_list[id].image
+}
+
+function load61(id) {
+  document.getElementById('name61').innerHTML = track_list[id].name;
+  document.getElementById('img61').src = track_list[id].image
+}
+
+function load62(id) {
+  document.getElementById('name62').innerHTML = track_list[id].name;
+  document.getElementById('img62').src = track_list[id].image
+}
+
+function load63(id) {
+  document.getElementById('name63').innerHTML = track_list[id].name;
+  document.getElementById('img63').src = track_list[id].image
+}
+
+function load64(id) {
+  document.getElementById('name64').innerHTML = track_list[id].name;
+  document.getElementById('img64').src = track_list[id].image
+}
+
+function load65(id) {
+  document.getElementById('name65').innerHTML = track_list[id].name
+  document.getElementById('img65').src = track_list[id].image
+}
+
+function load66(id) {
+  document.getElementById('name66').innerHTML = track_list[id].name;
+  document.getElementById('img66').src = track_list[id].image
+}
+
+function load67(id) {
+  document.getElementById('name67').innerHTML = track_list[id].name
+  document.getElementById('img67').src = track_list[id].image
+}
+
+function load68(id) {
+  document.getElementById('name68').innerHTML = track_list[id].name;
+  document.getElementById('img68').src = track_list[id].image
+}
+
+function load69(id) {
+  document.getElementById('name69').innerHTML = track_list[id].name;
+  document.getElementById('img69').src = track_list[id].image
+}
+
+function load70(id) {
+  document.getElementById('name70').innerHTML = track_list[id].name;
+  document.getElementById('img70').src = track_list[id].image
+}
+
+function load71(id) {
+  document.getElementById('name71').innerHTML = track_list[id].name
+  document.getElementById('img71').src = track_list[id].image
+}
+
+function load72(id) {
+  document.getElementById('name72').innerHTML = track_list[id].name
+  document.getElementById('img72').src = track_list[id].image
+}
+
+function load73(id) {
+  document.getElementById('name73').innerHTML = track_list[id].name;
+  document.getElementById('img73').src = track_list[id].image
+}
+
+function load74(id) {
+  document.getElementById('name74').innerHTML = track_list[id].name
+  document.getElementById('img74').src = track_list[id].image
+}
+
+function load75(id) {
+  document.getElementById('name75').innerHTML = track_list[id].name;
+  document.getElementById('img75').src = track_list[id].image
+}
+
+function load76(id) {
+  document.getElementById('name76').innerHTML = track_list[id].name;
+  document.getElementById('img76').src = track_list[id].image
+}
+
+function load77(id) {
+  document.getElementById('name77').innerHTML = track_list[id].name;
+  document.getElementById('img77').src = track_list[id].image
+}
+
+function load78(id) {
+  document.getElementById('name78').innerHTML = track_list[id].name
+  document.getElementById('img78').src = track_list[id].image
+}
+
+function load79(id) {
+  document.getElementById('name79').innerHTML = track_list[id].name;
+  document.getElementById('img79').src = track_list[id].image
+}
+
+function load80(id) {
+  document.getElementById('name80').innerHTML = track_list[id].name;
+  document.getElementById('img80').src = track_list[id].image
+}
+
+function load81(id) {
+  document.getElementById('name81').innerHTML = track_list[id].name;
+  document.getElementById('img81').src = track_list[id].image
+}
+
+function load82(id) {
+  document.getElementById('name82').innerHTML = track_list[id].name;
+  document.getElementById('img82').src = track_list[id].image
+}
+
+function load83(id) {
+  document.getElementById('name83').innerHTML = track_list[id].name
+  document.getElementById('img83').src = track_list[id].image
+}
+
+function load84(id) {
+  document.getElementById('name84').innerHTML = track_list[id].name;
+  document.getElementById('img84').src = track_list[id].image
+}
+
+function load85(id) {
+  document.getElementById('name85').innerHTML = track_list[id].name
+  document.getElementById('img85').src = track_list[id].image
+}
+
+function load86(id) {
+  document.getElementById('name86').innerHTML = track_list[id].name;
+  document.getElementById('img86').src = track_list[id].image
+}
+
+function load87(id) {
+  document.getElementById('name87').innerHTML = track_list[id].name;
+  document.getElementById('img87').src = track_list[id].image
+}
+
+function load88(id) {
+  document.getElementById('name88').innerHTML = track_list[id].name;
+  document.getElementById('img88').src = track_list[id].image
+}
+
+function load89(id) {
+  document.getElementById('name89').innerHTML = track_list[id].name
+  document.getElementById('img89').src = track_list[id].image
+}
+
+function load90(id) {
+  document.getElementById('name90').innerHTML = track_list[id].name
+  document.getElementById('img90').src = track_list[id].image
+}
+
+function resetValues() {
+  curr_time.textContent = "00:00";
+  total_duration.textContent = "00:00";
+  seek_slider.value = 0;
+}
+
+function resetValues() {
+  curr_time.textContent = "00:00";
+  total_duration.textContent = "00:00";
+  seek_slider.value = 0;
 }
 
 function resetValues() {

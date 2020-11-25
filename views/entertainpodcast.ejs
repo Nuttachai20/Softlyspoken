@@ -51,26 +51,9 @@
                             <% include blank %>
 
                                 <!-- <div class="warpingyou">
-                                <% include partials/card %>
-                                    <% include partials/card %>
-                                        <% include partials/card %>
-                                            <% include partials/card %>
-                                                <% include partials/card %>
-                                                    <% include partials/card %>
-                                                        <% include partials/card %>
-                                                            <% include partials/card %>
-                                                                <% include partials/card %>
-                                                                    <% include partials/card %>
-                                                                        <% include partials/card %>
-                                                                            <% include partials/card %>
-                                                                                <% include partials/card %>
-                                                                                    <% include partials/card %>
-                                                                                        <% include partials/card %>
-                                                                                            <% include partials/card %>
-                                                                                                <% include partials/card %>
-                                                                                                    <% include partials/card %>
-                                                                                                        <% include partials/card %>
-                                                                                                            <% include partials/card %>
+                                    <% for(var i=0; i<18; i++) { %>
+                                        <%- include('partials/card', {id: i}); %>
+                                        <% } %>
 
                             </div> -->
                         </div>

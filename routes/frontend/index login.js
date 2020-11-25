@@ -11,7 +11,7 @@ app.use(userRouter)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('indexnologin');
+    res.render('index');
 });
 
 module.exports = router;

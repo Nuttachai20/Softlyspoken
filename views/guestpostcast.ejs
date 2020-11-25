@@ -15,7 +15,7 @@
         </header>
     </div>
     <div class="row" style="padding-bottom: 1em; justify-content:flex-end; margin :0; border-bottom: 3px solid#D3BF07;">
-        <a class="myButton" id="see-more " href="/seemore "><span>see more</span><span
+        <a class="myButton" id="see-more " href="/recentlypodcast "><span>see more</span><span
                 class="glyphicon glyphicon-menu-hamburger "></span></a>
     </div>
     <div class="content ">
@@ -40,7 +40,7 @@
         </header>
     </div>
     <div class="row" style="padding-bottom: 1em; justify-content:flex-end; margin :0; border-bottom: 3px solid#D3BF07;">
-        <a class="myButton" id="see-more " href="/seemore "><span>see more</span><span
+        <a class="myButton" id="see-more " href="/entertainpodcast "><span>see more</span><span
                 class="glyphicon glyphicon-menu-hamburger "></span></a>
     </div>
 
@@ -54,7 +54,34 @@
         </header>
     </div>
     <div class="row" style="padding-bottom: 1em; justify-content:flex-end; margin :0; border-bottom: 3px solid#D3BF07;">
-        <a class="myButton" id="see-more " href="/seemore "><span>see more</span><span
+        <a class="myButton" id="see-more " href="/heathpodcast "><span>see more</span><span
+                class="glyphicon glyphicon-menu-hamburger "></span></a>
+    </div>
+    <div class="headertext" style="margin-top: 3em; color:black;">Health</div>
+    <div class="row" style="margin: 0; ">
+        <header class="regular slider ">
+            <% for(var i=36; i<54; i++) { %>
+                <%- include('partials/card', {id: i}); %>
+                    <% } %>
+
+        </header>
+    </div>
+    <div class="row" style="padding-bottom: 1em; justify-content:flex-end; margin :0; ">
+        <a class="myButton" id="see-more " href="/lovepodcast "><span>see more</span><span
+                class="glyphicon glyphicon-menu-hamburger "></span></a>
+    </div>
+
+    <div class="headertext" style="margin-top: 3em; color:black;">Entertainment</div>
+    <div class="row" style="margin: 0; ">
+        <header class="regular slider ">
+            <% for(var i=36; i<54; i++) { %>
+                <%- include('partials/card', {id: i}); %>
+                    <% } %>
+
+        </header>
+    </div>
+    <div class="row" style="padding-bottom: 1em; justify-content:flex-end; margin :0; ">
+        <a class="myButton" id="see-more " href="/studypodcast "><span>see more</span><span
                 class="glyphicon glyphicon-menu-hamburger "></span></a>
     </div>
     <footer>
