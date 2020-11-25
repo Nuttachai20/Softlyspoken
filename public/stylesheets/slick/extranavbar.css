@@ -28,6 +28,7 @@
 }
 
 .menu-bar li {
+    width: auto;
     list-style: none;
     color: white;
     font-weight: bold;
