@@ -9,9 +9,9 @@ router.post('/users', async (req, res) => {
 
     try {
         await user.save()
-        res.status(201).send(user)
+        res.redirect('/login')
     } catch (e) {
-        res.status(400).send(e)
+        res.redirect(req.get('referer'))
     }
 })
 
