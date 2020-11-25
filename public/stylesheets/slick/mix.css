@@ -41,24 +41,25 @@
 
 .allsidebar {
     justify-content: flex-end;
-    position: fixed;
-    right: 50px;
-    top: 100px;
     width: auto;
 }
 
 .sidebarfooter {
     margin-top: 0;
     margin-bottom: 0;
-    height: 50px;
+    height: 40px;
     width: 300px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .sidebarheader {
     height: 50px;
     font-size: 20px;
     width: 300px;
-    background-color: aqua;
+    background-color: #ECECEC;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .sidebarcontent {
@@ -685,6 +686,9 @@ nav {
 /* Default styles first then media queries */
 
 @media screen and (max-width: 398px) {
+    .allsidebar {
+        display: none;
+    }
     .commentt {
         font-size: 12px;
     }
