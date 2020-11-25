@@ -23,41 +23,78 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played 
 let track_list = [
   {
-    name: "A",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+    name: "[วันพีช] - ความลับของคาวามัตสึ",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
+    path: "http://localhost:3000/tracks/5fbe54b5bf68a943c4d30574"
   },
   {
-    name: "B",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
+    name: "5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง)",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
+    path: "http://localhost:3000/tracks/5fbe5567bf68a943c4d30595"
   },
   {
-    name: "C",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+    name: "เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
+    path: "http://localhost:3000/tracks/5fbe55a4bf68a943c4d305b0"
   },
   {
-    name: "D",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
+    name: "ตลกการเมือง  Podcast EP06",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
+    path: "http://localhost:3000/tracks/5fbe55c9bf68a943c4d305cd"
   },
   {
-    name: "E",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fbcdabd034977421c7609e5"
+    name: "ได้ขำไปและได้คิดไปในเวลาเดียวกัน  คำนี้ดี EP.220",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
+    path: "http://localhost:3000/tracks/5fbe55e6bf68a943c4d305fc"
   },
   {
-    name: "F",
-    artist: "Gunna",
-    image: "http://localhost:3000/resources/track_art.png",
-    path: "http://localhost:3000/tracks/5fba3abd803bbc17d064c012"
-  }
+    name: "นิทานตอนนอนกับลุงไนท์",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
+    path: "http://localhost:3000/tracks/5fbe55fdbf68a943c4d30623"
+  },
+  {},{},{},{},{},{},{},{},{},{},{},{},
+  {
+    name: "[วันพีช] - ความลับของคาวามัตสึ",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/[วันพีช] - ความลับของคาวามัตสึ.jpg",
+    path: "http://localhost:3000/tracks/5fbe54b5bf68a943c4d30574"
+  },
+  {
+    name: "5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง)",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/5 เคล็ดลับคุยยังไงให้สนุก (ฉบับคนคุยไม่เก่ง).jpg",
+    path: "http://localhost:3000/tracks/5fbe5567bf68a943c4d30595"
+  },
+  {
+    name: "เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/เข้าห้องปกครองครั้งแรก  69podcast EP.7 Highlight.jpg",
+    path: "http://localhost:3000/tracks/5fbe55a4bf68a943c4d305b0"
+  },
+  {
+    name: "ตลกการเมือง  Podcast EP06",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/ได้ขำไปและได้คิดไปในเวลาเดียวกัน คำนี้ดี EP.220.jpg",
+    path: "http://localhost:3000/tracks/5fbe55c9bf68a943c4d305cd"
+  },
+  {
+    name: "ได้ขำไปและได้คิดไปในเวลาเดียวกัน  คำนี้ดี EP.220",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/ตลกการเมือง  Podcast EP06.jpg",
+    path: "http://localhost:3000/tracks/5fbe55e6bf68a943c4d305fc"
+  },
+  {
+    name: "นิทานตอนนอนกับลุงไนท์",
+    artist: "",
+    image: "http://localhost:3000/resources/trackart/entertain/นิทานตอนนอนกับลุงไนท์.jpg",
+    path: "http://localhost:3000/tracks/5fbe55fdbf68a943c4d30623"
+  },
 ];
 
 function loadTrack(track_index) {
@@ -166,6 +203,96 @@ function load16(id) {
 function load17(id) {
   document.getElementById('name17').innerHTML = track_list[id].name
   document.getElementById('img17').src = track_list[id].image
+}
+
+function load18(id) {
+  document.getElementById('name18').innerHTML = track_list[id].name
+  document.getElementById('img18').src = track_list[id].image
+}
+
+function load19(id) {
+  document.getElementById('name19').innerHTML = track_list[id].name;
+  document.getElementById('img19').src = track_list[id].image
+}
+
+function load20(id) {
+  document.getElementById('name20').innerHTML = track_list[id].name
+  document.getElementById('img20').src = track_list[id].image
+}
+
+function load21(id) {
+  document.getElementById('name21').innerHTML = track_list[id].name;
+  document.getElementById('img21').src = track_list[id].image
+}
+
+function load22(id) {
+  document.getElementById('name22').innerHTML = track_list[id].name;
+  document.getElementById('img22').src = track_list[id].image
+}
+
+function load23(id) {
+  document.getElementById('name23').innerHTML = track_list[id].name;
+  document.getElementById('img23').src = track_list[id].image
+}
+
+function load24(id) {
+  document.getElementById('name24').innerHTML = track_list[id].name
+  document.getElementById('img24').src = track_list[id].image
+}
+
+function load25(id) {
+  document.getElementById('name25').innerHTML = track_list[id].name;
+  document.getElementById('img25').src = track_list[id].image
+}
+
+function load26(id) {
+  document.getElementById('name26').innerHTML = track_list[id].name;
+  document.getElementById('img26').src = track_list[id].image
+}
+
+function load27(id) {
+  document.getElementById('name27').innerHTML = track_list[id].name;
+  document.getElementById('img27').src = track_list[id].image
+}
+
+function load28(id) {
+  document.getElementById('name28').innerHTML = track_list[id].name;
+  document.getElementById('img28').src = track_list[id].image
+}
+
+function load29(id) {
+  document.getElementById('name29').innerHTML = track_list[id].name
+  document.getElementById('img29').src = track_list[id].image
+}
+
+function load30(id) {
+  document.getElementById('name30').innerHTML = track_list[id].name;
+  document.getElementById('img30').src = track_list[id].image
+}
+
+function load31(id) {
+  document.getElementById('name31').innerHTML = track_list[id].name
+  document.getElementById('img31').src = track_list[id].image
+}
+
+function load32(id) {
+  document.getElementById('name32').innerHTML = track_list[id].name;
+  document.getElementById('img32').src = track_list[id].image
+}
+
+function load33(id) {
+  document.getElementById('name33').innerHTML = track_list[id].name;
+  document.getElementById('img33').src = track_list[id].image
+}
+
+function load34(id) {
+  document.getElementById('name34').innerHTML = track_list[id].name;
+  document.getElementById('img34').src = track_list[id].image
+}
+
+function load35(id) {
+  document.getElementById('name35').innerHTML = track_list[id].name
+  document.getElementById('img35').src = track_list[id].image
 }
 
 function resetValues() {
